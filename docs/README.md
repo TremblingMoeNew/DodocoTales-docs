@@ -1,3 +1,2 @@
-# DodocoTales-docs
+# 嘟嘟可故事集
 
-[wish-log-formats/universal-format-intro.md](wish-log-formats/universal-format/intro.md)

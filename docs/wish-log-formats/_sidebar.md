@@ -1,4 +1,4 @@
-- [**前言**](wish-log-formats/)
+- [**前言**](wish-log-formats/ "祈愿格式库 - 前言")
 
 - 通用祈愿格式
   - [简介](wish-log-formats/universal-format/intro.md "通用祈愿格式 - 简介")
@@ -16,4 +16,6 @@
   - [寻空](wish-log-formats/others/xunkong.md)
   - [Snap.Genshin](wish-log-formats/others/snap-genshin.md)
   - [刻记牛杂店](wish-log-formats/others/keqingniuza.md)
+  - [非小酋](wish-log-formats/others/feixiaoqiu.md)
   - [Paimon.moe](wish-log-formats/others/paimon-moe.md)
+
