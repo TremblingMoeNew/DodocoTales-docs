@@ -10,4 +10,3 @@
 当前，存在工具以通用祈愿格式或其衍生扩展格式充当祈愿记录的本地储存格式，数种祈愿导出工具提供了导入或导出支持，具体请见[支持现状](wish-log-formats/universal-format/support-status.md)。
 
 ?> 通用祈愿格式的构想最初由[@Scighost](https://github.com/Scighost) 提出，由[@biuuu](https://github.com/biuuu)、[@Lightczx](https://github.com/Lightczx)、[@Scighost](https://github.com/Scighost)、[@sunfkny](https://github.com/sunfkny)、[@TremblingMoeNew](https://github.com/TremblingMoeNew)共同讨论敲定*（[关于规范祈愿记录导出格式的建议](https://github.com/xunkong/KeqingNiuza/discussions/58)）*。当前最新标准版本为UIGF`v2.2`。
-
