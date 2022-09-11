@@ -1,8 +1,8 @@
-- [**前言**](wish-log-formats/ "祈愿格式库 - 前言")
+- [**前言**](wish-log-formats/ "祈愿记录格式库 - 开始")
 
 - 通用祈愿格式
   - [简介](wish-log-formats/universal-format/intro.md "通用祈愿格式 - 简介")
-  - [Json格式](wish-log-formats/universal-format/json.md "通用祈愿格式 - Json格式")
+  - [JSON格式](wish-log-formats/universal-format/json.md "通用祈愿格式 - JSON格式")
   - [Excel格式](wish-log-formats/universal-format/excel.md "通用祈愿格式 - 工作簿格式")
   - [标准原文](wish-log-formats/universal-format/uigf-standard.md "通用祈愿格式 - 标准原文")
   - [支持现状](wish-log-formats/universal-format/support-status.md "通用祈愿格式 - 支持现状")

@@ -4,7 +4,7 @@
 
 当前已知的适配通用祈愿格式的工具如下（顺序无意义）：
 
-| 祈愿工具         |                     | 平台 | `export_app`            | 导入Excel | 导入Json | 导出Excel | 导出Json |
+| 祈愿工具         |                     | 平台 | `export_app`            | 导入Excel | 导入JSON | 导出Excel | 导出JSON |
 | ---------------- | ------------------- | ---- | ----------------------- | ------------ | ----------- | ------------ | ----------- |
 | 原神祈愿记录导出工具<br/>(Genshin Wish Export) | [biuuu/genshin wish export](https://github.com/biuuu/genshin-wish-export) | PC   | `genshin-wish-export` | :x:          | :x:         | :x:          | `2.1`     |
 |Snap.Genshin|[DGP Studio/Snap.Genshin](https://github.com/DGP-Studio/Snap.Genshin)|PC|`Snap Genshin`|`v2.2`|`v2.2`|`v2.2`|`v2.2`|
@@ -26,7 +26,7 @@
 
 其导出的Excel格式祈愿记录并未适配通用祈愿格式，仍为传统祈愿导出格式。
 
-其导出的Json格式祈愿格式记录为通用祈愿格式，适配UIGF`v2.1`标准。
+其导出的JSON格式祈愿格式记录为通用祈愿格式，适配UIGF`v2.1`标准。
 
 - 其`info`对象具有`uid`、`lang`、`export_time`、`export_app`、`export_app_version`、`uigf_version`六个字段。
 - 其`info`对象下的`export_app`字段的取值为`genshin-wish-export`。
@@ -41,14 +41,14 @@
 
 该工具具有完整的通用祈愿格式支持。
 
-其支持导入Excel格式与Json格式的通用祈愿格式记录文件，无特殊限制。
+其支持导入Excel格式与JSON格式的通用祈愿格式记录文件，无特殊限制。
 
 其导出的Excel格式祈愿记录为通用祈愿格式，适配UIGF`v2.2`标准。
 
 - 其传统祈愿记录兼容部分表头为`时间`、`名称`、`物品类型`、`星级`、`祈愿类型`、`总抽数`、`距上一个五星`。其`物品类型`列为简体中文取值(`角色`/`武器`)。
 - 其`原始数据`表中`count`、`item_id`、`lang`列为空。
 
-其导出的Json格式祈愿记录为通用祈愿格式，适配UIGF`v2.2`标准。
+其导出的JSON格式祈愿记录为通用祈愿格式，适配UIGF`v2.2`标准。
 
 - 其`info`对象具有`uid`、`lang`、`export_time`、`export_timestamp`、`export_app`、`export_app_version`、`uigf_version`七个字段。
 - 其`info`对象下的`export_app`字段的取值为`Snap Genshin`。
@@ -62,15 +62,15 @@
 
 !> 该工具已停止维护
 
-该工具具有通用祈愿记录文件导入支持、以及Json格式导出支持。
+该工具具有通用祈愿记录文件导入支持、以及JSON格式导出支持。
 
-其支持导入Excel格式与Json格式的通用祈愿格式记录文件。
+其支持导入Excel格式与JSON格式的通用祈愿格式记录文件。
 
 其导出的Excel格式祈愿记录为通用祈愿格式，适配UIGF`v2.0`标准。
 
 - 其传统祈愿记录兼容部分表头为`时间`、`名称`、`物品类型`、`星级`、`祈愿类型`、`总次数`、`保底内`、`祈愿Id`。其`物品类型`列取值视导入时的客户端语言而定。
 
-其不支持Json格式祈愿记录导出。
+其不支持JSON格式祈愿记录导出。
 
 其导出的通用祈愿格式文件具有以下需要注意的特点或问题：
 
@@ -81,13 +81,13 @@
 
 该工具具有通用祈愿格式支持。
 
-其支持导入Excel格式与Json格式的通用祈愿格式记录文件。
+其支持导入Excel格式与JSON格式的通用祈愿格式记录文件。
 
 其导出的Excel格式祈愿记录为通用祈愿格式，适配UIGF`v2.2`标准。
 
 - 其传统祈愿记录兼容部分表头为`时间`、`名称`、`物品类型`、`星级`、`祈愿类型`、`总次数`、`保底内`、`祈愿Id`。其`物品类型`列取值视导入时的客户端语言而定。
 
-其导出的Json格式祈愿记录为通用祈愿格式，适配UIGF`v2.2`标准。
+其导出的JSON格式祈愿记录为通用祈愿格式，适配UIGF`v2.2`标准。
 
 - 其`info`对象具有`uid`、`lang`、`export_time`、`export_timestamp`、`export_app`、`export_app_version`、`uigf_version`七个字段。
 - 其`info`对象下的`export_app`字段的取值为`Xunkong.Desktop`。
@@ -110,7 +110,7 @@
 
 - 其传统祈愿记录兼容部分表头为`时间`、`名称`、`类别`、`星级`、`祈愿类型`、`总次数`、`保底内`。其`物品类型`列为简体中文取值(`角色`/`武器`)。
 
-其导出的Json格式祈愿记录为通用祈愿格式，适配UIGF`v2.2`标准。
+其导出的JSON格式祈愿记录为通用祈愿格式，适配UIGF`v2.2`标准。
 
 - 其祈愿项具有`uid`、`gacha_type`、`item_id`、`count`、`time`、`name`、`lang`、`item_type`、`rank_type`、`id`、`uigf_gacha_type`十一个字段。
 - 其`info`对象下的`export_app`字段的取值为`genshin-gacha-export`。
@@ -119,11 +119,11 @@
 
 !> 该工具的当前版本(`v0.x`)已基本停止维护且不支持导入与导出功能。以下内容基于开发中的`v1.x`版本。
 
-该工具具有Json格式的通用祈愿格式支持。
+该工具具有JSON格式的通用祈愿格式支持。
 
-其支持导入Json格式的通用祈愿格式记录文件，适配UIGF`v2.1`标准。
+其支持导入JSON格式的通用祈愿格式记录文件，适配UIGF`v2.1`标准。
 
-其导出的Json格式祈愿记录为通用祈愿格式，适配UIGF`v2.1`标准。
+其导出的JSON格式祈愿记录为通用祈愿格式，适配UIGF`v2.1`标准。
 
 - 其`info`对象具有`uid`、`lang`、`export_time`、`export_app`、`export_app_version`、`uigf_version`六个标准字段及`__ddc_client_region`与`__ddc_timezone`两个自定义扩展字段。
 - 其祈愿项具有`gacha_type`、`time`、`name`、`item_type`、`rank_type`、`id`、`uigf_gacha_type`七个字段。
@@ -147,7 +147,7 @@
 
 - 其传统祈愿记录兼容部分表头为`时间`、`名称`、`物品类型`、`星级`、`祈愿类型`、`总次数`、`保底内`。
 
-其导出的Json格式祈愿记录为通用祈愿格式，适配UIGF`v2.2`标准。
+其导出的JSON格式祈愿记录为通用祈愿格式，适配UIGF`v2.2`标准。
 
 - 其`info`对象下的`export_app`字段的取值为`nonebot-plugin-gachalogs`。
 
@@ -171,11 +171,11 @@
 
 ## 原神助手
 
-> \* 该工具采用通用祈愿格式文件（Json）作为储存格式。
+> \* 该工具采用通用祈愿格式文件（JSON）作为储存格式。
 
 该工具不具有祈愿记录导入或导出功能。
 
-该工具直接采用通用祈愿格式文件（Json）作为储存格式，适配UIGF`v2.2`标准。
+该工具直接采用通用祈愿格式文件（JSON）作为储存格式，适配UIGF`v2.2`标准。
 
 - 记录储存目录为`%APPDATA%/原神助手/GachaDatas/`。
 - 其`info`对象具有`uid`、`lang`、`export_time`、`export_timestamp`、`export_app`、`export_app_version`、`uigf_version`七个字段。

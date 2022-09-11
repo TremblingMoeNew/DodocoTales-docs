@@ -21,6 +21,10 @@
       loadNavbar: true,
       subMaxLevel: 3,
       auto2top: true,
+      alias: {
+        '#/wish-log-formats/getting-started': '#/wish-log-formats/',
+        '/wish-log-formats/getting-started': '#/wish-log-formats/',
+      },
       plugins: [
         function(hook, vm) {
           hook.beforeEach(function(html) {

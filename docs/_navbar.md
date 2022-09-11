@@ -1,2 +1,2 @@
 - [帮助](/)
-- [祈愿格式库](wish-log-formats/)
+- [祈愿记录格式库](wish-log-formats/ "祈愿记录格式库 - 开始")

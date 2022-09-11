@@ -1,9 +1,9 @@
 # 通用祈愿格式 - 简介
 <!-- {docsify-ignore-all} -->
 
-通用祈愿格式，正式名称**“统一可交换祈愿记录标准”**（Uniformed Interchangeable GachaLog Format standard, **UIGF**)，为一类设计用于在各种祈愿导出、统计与分析工具间进行有效信息交换的祈愿记录保存格式规范。
+通用祈愿格式，正式名称**“统一可交换祈愿记录标准”**（Uniformed Interchangeable Gacha log Format standard, **UIGF**)，为一类设计用于在各种祈愿导出、统计与分析工具间进行有效信息交换的祈愿记录保存格式规范。
 
-当前，通用祈愿格式下共包含Excel格式与Json格式两种规范。`v1.x`版本的嘟嘟可故事集仅对Json格式做出兼容保证。
+当前，通用祈愿格式下共包含Excel格式与JSON格式两种规范。`v1.x`版本的嘟嘟可故事集仅对JSON格式做出兼容保证。
 
 由于制定时的妥协，标准的UIGF格式仅允许、且假定以简体中文作为全部祈愿记录项所采用的语言。
 
