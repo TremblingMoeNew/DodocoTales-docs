@@ -6,6 +6,8 @@
 
 其主要用户为国际服玩家，语言为英文。其界面提供了本地化翻译。
 
+其用户信息储存于浏览器缓存或用户指定的Google Drive之中。
+
 其开源项目地址为[MadeBaruna/paimon-moe](https://github.com/MadeBaruna/paimon-moe) 
 
 ?> 以下基于Paimon.moe于2022年9月10日时的状态介绍。
