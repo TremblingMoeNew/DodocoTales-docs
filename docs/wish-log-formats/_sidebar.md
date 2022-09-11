@@ -8,14 +8,13 @@
   - [支持现状](wish-log-formats/universal-format/support-status.md "通用祈愿格式 - 支持现状")
 
 - 嘟嘟可故事集格式
-  - [新版格式 (>= v1.0)](wish-log-formats/dodoco-tales/standard.md "嘟嘟可故事集本地储存格式")
-  - [旧版格式 (< v1.0)](wish-log-formats/dodoco-tales/legacy.md "嘟嘟可故事集遗留储存格式")
+  - [新版格式 (>= v1.0)](wish-log-formats/dodoco-tales/standard.md "嘟嘟可故事集 - 本地储存格式")
+  - [旧版格式 (< v1.0)](wish-log-formats/dodoco-tales/legacy.md "嘟嘟可故事集 - 遗留储存格式")
 
 - 其他工具
-  - [原神祈愿导出工具](wish-log-formats/others/genshin-wish-export.md)
-  - [寻空](wish-log-formats/others/xunkong.md)
-  - [Snap.Genshin](wish-log-formats/others/snap-genshin.md)
-  - [刻记牛杂店](wish-log-formats/others/keqingniuza.md)
-  - [非小酋](wish-log-formats/others/feixiaoqiu.md)
-  - [Paimon.moe](wish-log-formats/others/paimon-moe.md)
-
+  - [原神祈愿导出工具](wish-log-formats/others/genshin-wish-export.md "其他工具 - 原神祈愿导出工具")
+  - [刻记牛杂店](wish-log-formats/others/keqingniuza.md "其他工具 - 刻记牛杂店")
+  - [Snap.Genshin](wish-log-formats/others/snap-genshin.md "其他工具 - Snap.Genshin")
+  - [寻空](wish-log-formats/others/xunkong.md "其他工具 - 寻空")
+  - [非小酋](wish-log-formats/others/feixiaoqiu.md "其他工具 - 非小酋")
+  - [Paimon.moe](wish-log-formats/others/paimon-moe.md "其他工具 - Paimon.moe")
