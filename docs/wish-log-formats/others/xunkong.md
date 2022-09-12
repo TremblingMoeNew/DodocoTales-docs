@@ -8,6 +8,8 @@
 
 其开源项目地址为[xunkong/xunkong](https://github.com/xunkong/xunkong)。
 
+?> 以下基于寻空于2022年9月10日时的状态(`v1.2.1.0`)介绍。
+
 ## 导入
 
 该工具支持从通用祈愿格式文件导入，详情请见[通用祈愿格式 - 支持现状 - 寻空](wish-log-formats/universal-format/support-status.md#寻空 "通用祈愿格式 - 支持现状 - 寻空")。

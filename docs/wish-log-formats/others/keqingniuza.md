@@ -10,6 +10,8 @@
 
 其开源项目地址为[xunkong/KeqingNiuza](https://github.com/xunkong/KeqingNiuza) 。
 
+?> 以下基于刻记牛杂店于2022年9月10日时的状态(`v2.3.2`)介绍。
+
 ## 导入
 
 刻记牛杂店提供了Excel文件（传统祈愿导出格式）、Excel文件（通用祈愿格式）、JSON文件（通用祈愿格式）三种导入选项。

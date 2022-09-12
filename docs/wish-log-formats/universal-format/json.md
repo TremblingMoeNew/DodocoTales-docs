@@ -58,7 +58,7 @@
 | `export_time` | 文件生成时间 | 未强制要求，格式应为`yyyy-MM-dd hh:mm:ss` | 非必要              | 格式为`yyyy-MM-dd hh:mm:ss` |
 | `export_app`  | 文件创建工具标识      | 未强制要求。由各工具自行定义。 | 非必要              | `DodocoTales`               |
 |`export_app_version`|工具版本标识|未强制要求。由各工具自行定义。|非必要|主程序版本号|
-|`uigf_versuon`|遵循的UIGF版本号|[已定义的](wish-log-formats/universal-format/uigf.md#uigf_version)UIGF版本号。|暂无限制|`v2.1`|
+|`uigf_versuon`|遵循的UIGF版本号|[已定义的](wish-log-formats/universal-format/uigf-standard.md#uigf_version)UIGF版本号。|暂无限制|`v2.1`|
 |`export_timestamp`|文件生成的UNIX时间戳|于`v2.2`加入标准。|不支持，将被忽略|不支持|
 
 ### 扩展信息
