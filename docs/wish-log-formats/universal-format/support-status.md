@@ -12,7 +12,7 @@
 |寻空|[Scighost/Xunkong](https://github.com/Scighost/Xunkong)|PC|`Xunkong.Desktop`|`v2.2`|`v2.2`|`v2.2`|`v2.2`|
 |原神抽卡记录导出<br/>(Genshin Gacha Export)|[sunfkny/genshin gacha export](https://github.com/sunfkny/genshin-gacha-export)|PC|`genshin-gacha-export`|:x:|:x:|`v2.2`|`v2.2`|
 |嘟嘟可故事集(`v1.x`)|[TremblingMoeNew/DodocoTales](https://github.com/TremblingMoeNew/DodocoTales)|PC|`DodocoTales`|:x:|`v2.1`|:x:|`v2.1`|
-|应急食品|[MUK/应急食品](https://gtool.mukapp.top/)|Android|`MUKGenshinTool`|||||
+|应急食品|[应急食品](https://gtool.mukapp.top/)|Android|`MUKGenshinTool`|||||
 |NoneBot Plugin GachaLogs|[monsterxcn/nonebot-plugin-gachalogs](https://github.com/monsterxcn/nonebot-plugin-gachalogs)|NoneBot2|`nonebot-plugin-gachalogs`|:x:|:x:|`v2.2`|`v2.2`|
 |云崽|[Yunzai-Bot](https://github.com/Le-niao/Yunzai-Bot)|OICQ|`Yunzai-Bot`|`v2.2`|`v2.2`|`v2.2`|`v2.2`|
 |GenshinUID|[KimigaiiWuyi/GenshinUID](https://github.com/KimigaiiWuyi/GenshinUID)|HoshinoBot/NoneBot2|`GenshinUID`|:x:|`v2.1`|:x:|`v2.1`|
