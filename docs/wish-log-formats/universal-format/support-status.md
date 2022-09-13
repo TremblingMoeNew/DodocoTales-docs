@@ -18,7 +18,8 @@
 |GenshinUID|[KimigaiiWuyi/GenshinUID](https://github.com/KimigaiiWuyi/GenshinUID)|HoshinoBot/NoneBot2|`GenshinUID`|:x:|`v2.1`|:x:|`v2.1`|
 |Genshin Pray Export|[AuroraZiling/genshin-pray-export](https://github.com/AuroraZiling/genshin-pray-export)|PC|:x:|:x:|:x:|:x:|`v2.0`|
 |派蒙笔记本|[QooLianyi/PaimonsNotebook](https://github.com/QooLianyi/PaimonsNotebook)|Android|`Paimons Notebook`|`v2.2`|`v2.2`|`v2.2`|`v2.2`|
-|原神助手|[Vikiboss/genshin-helper](https://github.com/Vikiboss/genshin-helper)|PC|`原神助手`|:x:|:x:|:x:|`v2.2`(*)|
+|原神助手|[Vikiboss/genshin-helper](https://github.com/Vikiboss/genshin-helper)|PC|`Genshin Helper`|:x:|`v2.2`|:x:|`v2.2`|
+|小派蒙|[CMHopeSunshine/LittlePaimon](https://github.com/CMHopeSunshine/LittlePaimon)|NoneBot2|:x:|:x:|`v2.1`|:x:|`v2.1`|
 
 ## 原神祈愿导出工具
 
@@ -178,17 +179,25 @@
 
 ## 原神助手
 
-> \* 该工具采用通用祈愿格式文件（JSON）作为储存格式。
+> 该工具采用通用祈愿格式文件（JSON）作为储存格式。
 
-该工具不具有祈愿记录导入或导出功能。
+其支持导入JSON格式的通用祈愿格式记录文件。
 
-该工具直接采用通用祈愿格式文件（JSON）作为储存格式，适配UIGF`v2.2`标准。
+其导出的JSON格式祈愿记录为通用祈愿格式，适配UIGF`v2.2`标准。
 
-- 记录储存目录为`%APPDATA%/原神助手/GachaDatas/`。
+- 作为导出格式时，其`info`对象下的`export_app`字段的取值为`Genshin Helper` 。
 - 其`info`对象具有`uid`、`lang`、`export_time`、`export_timestamp`、`export_app`、`export_app_version`、`uigf_version`七个字段。
-- 其`info`对象下的`export_app`字段的取值为`原神助手` 。
 - 其祈愿项具有`gacha_type`、`item_id`、`count`、`time`、`name`、`item_type`、`rank_type`、`id`、`uigf_gacha_type`九个字段。
 
-其导出的通用祈愿格式文件具有以下需要注意的特点或问题：
+其直接采用通用祈愿格式文件作为储存格式，适配UIGF`v2.2`标准。
 
-- 其`info`对象下的`export_time`、`export_timestamp`字段值为空字符串（`""`)。
+- 记录储存目录为`%APPDATA%/原神助手/GachaDatas/`。
+- 作为储存格式时，其`info`对象下的`export_app`字段的取值为`原神助手` 。
+
+其用于储存的通用祈愿格式文件具有以下需要注意的特点或问题：
+
+- 其`info`对象下的`export_time`、`export_timestamp`字段值为空字符串（`""`)。作为导出格式时，这两个字段被正确赋值。
+
+## 小派蒙
+
+!> 等待完善
