@@ -1,0 +1,6 @@
+- Universal Wish Format
+  - [Intro](en-us/wish-log-formats/universal-format/intro.md "Universal Wish Format - Introduction")
+  - [JSON Format](en-us/wish-log-formats/universal-format/json.md "Universal Wish Format - the JSON Variant")
+  - [Workbook Format](en-us/wish-log-formats/universal-format/excel.md "Universal Wish Format - the Workbook Variant")
+  - [UIGF Standard (English Translation)](en-us/wish-log-formats/universal-format/uigf-standard.md "Universal Wish Format - The English Translation of UIGF Standard")
+  - [Support Status](en-us/wish-log-formats/universal-format/support-status.md "Universal Wish Format - Support Status")

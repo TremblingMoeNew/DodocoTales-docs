@@ -1,0 +1,2 @@
+- [Wish Log Format Library](en-us/wish-log-formats/ "Wish Log Format Library - Getting Started")
+- [(Chinese Version)](wish-log-formats/ "祈愿记录格式库 - 开始")
