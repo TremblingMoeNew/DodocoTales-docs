@@ -20,6 +20,7 @@
 |派蒙笔记本|[QooLianyi/PaimonsNotebook](https://github.com/QooLianyi/PaimonsNotebook)|Android|`Paimons Notebook`|`v2.2`|`v2.2`|`v2.2`|`v2.2`|
 |原神助手|[Vikiboss/genshin-helper](https://github.com/Vikiboss/genshin-helper)|PC|`Genshin Helper`|:x:|`v2.2`|:x:|`v2.2`|
 |小派蒙|[CMHopeSunshine/LittlePaimon](https://github.com/CMHopeSunshine/LittlePaimon)|NoneBot2|:x:|:x:|`v2.1`|:x:|`v2.1`|
+|Snap.Hutao|[DGP-Studio/Snap.Hutao](https://github.com/DGP-Studio/Snap.Hutao)|PC|`胡桃`|`v2.2`|`v2.2`|`v2.2`|`v2.2`|
 
 ## 原神祈愿导出工具
 
@@ -201,3 +202,14 @@
 ## 小派蒙
 
 !> 等待完善
+
+## Snap.Hutao
+
+!> 等待完善
+
+该工具具有完整的通用祈愿格式支持。
+
+其导入通用祈愿格式文件时具有以下需要注意的特点或问题：
+
+- 其**仅支持**UIGF`v2.2`。导入的通用祈愿记录文件的`export_app`的值必须为`v2.2`。
+

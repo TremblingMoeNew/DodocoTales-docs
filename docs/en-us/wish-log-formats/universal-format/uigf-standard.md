@@ -66,7 +66,7 @@ Note that, the `uigf_gacha_type` field need to be added when exporting your wish
 
 We recommend to:
 
-* Contain the `uid` of the user whow the exported data belongs to.
+* Contain the `uid` of the user whom the exported data belongs to.
 * Give users the right to modify the name of the file before the export operation.
 
 ### Format of the cells
@@ -78,9 +78,9 @@ We recommend to:
 |Name|Content|Type|Necessity|
 |-|-|-|-|
 |Statistical Analysis|Analyse statistics and more|Any|Optional|
-|Character Event Wish<br/>角色活动祈愿|Wish data with a `gacha_type` of `301\|400` |Wish Log Table|Optional, butexpected for export|
-|Weapon Event Wish<br/>武器活动祈愿|Wish data with a `gacha_type` of `302`|Wish Log Table|Optional, butexpected for export|
-|Permanent Wish<br/>常驻祈愿|Wish data with a `gacha_type` of `200`|Wish Log Table|Optional, butexpected for export|
+|Character Event Wish<br/>角色活动祈愿|Wish data with a `gacha_type` of `301\|400` |Wish Log Table|Optional, but expected for export|
+|Weapon Event Wish<br/>武器活动祈愿|Wish data with a `gacha_type` of `302`|Wish Log Table|Optional, but expected for export|
+|Permanent Wish<br/>常驻祈愿|Wish data with a `gacha_type` of `200`|Wish Log Table|Optional, but expected for export|
 |Beginner's Wish<br/>新手祈愿|Wish data with a `gacha_type` of `100`|Wish Log Table|Optional, but expected for export|
 |Raw Data<br/>原始数据|All the wish log data|Raw Data Table|**See the *Structure of Raw Data Table* section below for detail**|
 
