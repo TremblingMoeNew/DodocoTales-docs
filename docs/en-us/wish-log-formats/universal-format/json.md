@@ -67,7 +67,7 @@ According to the UIGF standard, to ensure the information integrity of data exch
 | Fields   | UIGF Specification  |
 | ------ | ----------------------------------------------- |
 | `uid`  | OPTIONAL. Recommended to be decided by the users.  |
-| `lang` | OPTIONAL. Recommended. ALL THE WISH LOG ITEMS should be in this language |
+| `lang` | OPTIONAL. Recommended. ALL THE WISH LOG ITEMS should be in this language. |
 
 ### Export Info
 
@@ -80,14 +80,14 @@ The following fields are not the mandatory fields in the UIGF standard, but may 
 | `export_time` | File created time | Format should be `yyyy-MM-dd hh:mm:ss` |
 | `export_app`  | File created by which application  | Defined by the application |
 |`export_app_version`| The application's version |Defined by the application|
-|`uigf_versuon`|The version of UIGF Standard the file follows| A [defined](wish-log-formats/universal-format/uigf-standard.md#uigf_version) UIGF Version|
-|`export_timestamp`| The UNIX timestamp of created time | 32-bit UNIX timestamp. Since UIGF `v2.2`|
+|`uigf_versuon`|The version of UIGF Standard the file follows| A [defined](en-us/wish-log-formats/universal-format/uigf-standard.md#uigf_version) UIGF Version|
+|`export_timestamp`| The UNIX timestamp of created time | 32-bit UNIX timestamp but as int64. Since UIGF `v2.2`|
 
 ### Extended Info
 
-You may add some costomized fields in the Basic Info section. This is not a part of the UIGF standard.
+You may add some customized fields in the Basic Info section. This is not a part of the UIGF standard.
 
-Ensure that your costiomzed fields should not be collided with any possibie standard fields that may be added in the future. You may use a special prefix of your own.
+Ensure that your customized fields should not be collided with any possibie standard fields that may be added in the future. You may use a special prefix of your own.
 
 ## Wish Log Item
 

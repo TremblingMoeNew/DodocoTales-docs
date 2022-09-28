@@ -15,12 +15,13 @@
 |应急食品|[应急食品](https://gtool.mukapp.top/)|Android|`MUKGenshinTool`|||||
 |NoneBot Plugin GachaLogs|[monsterxcn/nonebot-plugin-gachalogs](https://github.com/monsterxcn/nonebot-plugin-gachalogs)|NoneBot2|`nonebot-plugin-gachalogs`|:x:|:x:|`v2.2`|`v2.2`|
 |云崽|[Yunzai-Bot](https://github.com/Le-niao/Yunzai-Bot)|OICQ|`Yunzai-Bot`|`v2.2`|`v2.2`|`v2.2`|`v2.2`|
-|GenshinUID|[KimigaiiWuyi/GenshinUID](https://github.com/KimigaiiWuyi/GenshinUID)|HoshinoBot/NoneBot2|`GenshinUID`|:x:|`v2.1`|:x:|`v2.1`|
-|Genshin Pray Export|[AuroraZiling/genshin-pray-export](https://github.com/AuroraZiling/genshin-pray-export)|PC|:x:|:x:|:x:|:x:|`v2.0`|
+|GenshinUID|[KimigaiiWuyi/GenshinUID](https://github.com/KimigaiiWuyi/GenshinUID)|HoshinoBot/NoneBot2|`GenshinUID`|:x:|`v2.0`|:x:|`v2.0`|
+|Genshin Pray Export|[AuroraZiling/genshin-pray-export](https://github.com/AuroraZiling/genshin-pray-export)|PC|:x:|:x:|`v2.1`|:x:|`v2.1`|
 |派蒙笔记本|[QooLianyi/PaimonsNotebook](https://github.com/QooLianyi/PaimonsNotebook)|Android|`Paimons Notebook`|`v2.2`|`v2.2`|`v2.2`|`v2.2`|
 |原神助手|[Vikiboss/genshin-helper](https://github.com/Vikiboss/genshin-helper)|PC|`Genshin Helper`|:x:|`v2.2`|:x:|`v2.2`|
 |小派蒙|[CMHopeSunshine/LittlePaimon](https://github.com/CMHopeSunshine/LittlePaimon)|NoneBot2|:x:|:x:|`v2.1`|:x:|`v2.1`|
-|Snap.Hutao|[DGP-Studio/Snap.Hutao](https://github.com/DGP-Studio/Snap.Hutao)|PC|`胡桃`|`v2.2`|`v2.2`|`v2.2`|`v2.2`|
+|Snap.Hutao|[DGP-Studio/Snap.Hutao](https://github.com/DGP-Studio/Snap.Hutao)|PC|`胡桃`|:x:|`v2.2`|:x:|`v2.2`|
+|Genshin Gacha|[lgou2w/genshin-gacha](https://github.com/lgou2w/genshin-gacha)|PC|`Genshin Gacha`|:x:|:x:|:x:|`v2.2`|
 
 ## 原神祈愿导出工具
 
@@ -160,8 +161,6 @@
 
 - 其`info`对象下的`export_app`字段的取值为`nonebot-plugin-gachalogs`。
 
-
-
 ## 云崽
 
 !> 等待完善
@@ -172,7 +171,17 @@
 
 ## Genshin Pray Export
 
-!> 等待完善
+其支持导入JSON格式的通用祈愿格式记录文件，适配UIGF`v2.0`标准。
+
+其导出的JSON格式祈愿记录为通用祈愿格式，适配UIGF`v2.0`标准。
+
+- 其`info`对象**仅具有**`uid`、`lang`、`export_time`三个字段，**不具有导出工具信息以及UIGF版本信息**。
+- 其祈愿项具有`gacha_type`、`count`、`time`、`name`、`item_type`、`rank_type`、`id`、`uigf_gacha_type`八个字段
+- 其`info`对象中**不存在**`export_app`字段。
+
+其导出的通用祈愿格式文件具有以下需要注意的特点或问题：
+
+- 其缺失**导出工具信息**（`export_app`、`export_app_version`）**及UIGF版本信息**（`uigf_version`）。
 
 ## 派蒙笔记本
 
@@ -209,7 +218,31 @@
 
 该工具具有完整的通用祈愿格式支持。
 
+其支持导入Excel格式与JSON格式的通用祈愿格式记录文件，无特殊限制。
+
+其导出的Excel格式祈愿记录为通用祈愿格式，适配UIGF`v2.2`标准。
+
+- 功能暂未实现
+
+其导出的JSON格式祈愿记录为通用祈愿格式，适配UIGF`v2.2`标准。
+
+- 其`info`对象具有`uid`、`lang`、`export_time`、`export_timestamp`、`export_app`、`export_app_version`、`uigf_version`七个字段。
+- 其祈愿项具有`uigf_gacha_type`、`uid`、`gacha_type`、`item_id`、`count`、`time`、`name`、`lang`、`item_type`、`rank_type`、`id`十一个字段。
+- 其`info`对象下的`export_app`字段的取值为`胡桃`。
+
 其导入通用祈愿格式文件时具有以下需要注意的特点或问题：
 
 - 其**仅支持**UIGF`v2.2`。导入的通用祈愿记录文件的`export_app`的值必须为`v2.2`。
 
+
+## Genshin Gacha
+
+该工具不具有祈愿记录导入功能。
+
+其导出的Excel格式祈愿记录并未适配通用祈愿格式，仍为传统祈愿导出格式的变种。
+- 其祈愿记录表的F列，若对应祈愿项属于“角色活动祈愿-2”祈愿类型，则赋值为“祈愿-2”。
+
+其导出的JSON格式祈愿记录为通用祈愿格式，适配UIGF`v2.2`标准。
+- 其`info`对象具有`uid`、`lang`、`export_time`、`export_timestamp`、`export_app`、`export_app_version`、`uigf_version`七个字段。
+- 其祈愿项具有`count`、`gacha_type`、`id`、`item_id`、`item_type`、`lang`、`name`、`rank_type`、`time`、`uid`、`uigf_gacha_type`十一个字段
+- 其`info`对象下的`export_app`字段的取值为`Genshin Gacha`。

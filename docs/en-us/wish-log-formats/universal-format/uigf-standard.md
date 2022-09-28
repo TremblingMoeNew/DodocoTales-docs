@@ -17,7 +17,7 @@ SO WE,
 
 *( Sorted by lexicographic order, which has no any other means. )*
 
-TOGETHER TO DRAW UP THE STANDARD, to enhance the data exangeability between Apps relevant to the *Genshin Impact* game.
+TOGETHER TO DRAW UP THE STANDARD, to enhance the data exchangeability between Apps relevant to the *Genshin Impact* game.
 
 If there is needs to exchange any new forms of data between apps in the future, the new standards would also be made.
 
@@ -29,7 +29,7 @@ If there is needs to exchange any new forms of data between apps in the future, 
 
 ### Id
 
-*Genshin Impact*'s wish log item contains a special field `id`. This field was added after the Version 1.3 of the game.
+*Genshin Impact*'s wish log item contains a special field `id`. This field was added since the Version 1.3 of the game.
 
 So, **the items logged before that** would not have the corresponding `id` without a special compatibility modification.
 
@@ -67,7 +67,7 @@ Note that, the `uigf_gacha_type` field need to be added when exporting your wish
 We recommend to:
 
 * Contain the `uid` of the user whom the exported data belongs to.
-* Give users the right to modify the name of the file before the export operation.
+* Give users the right to modify the name of the file before the export process.
 
 ### Format of the cells
 
@@ -78,9 +78,9 @@ We recommend to:
 |Name|Content|Type|Necessity|
 |-|-|-|-|
 |Statistical Analysis|Analyse statistics and more|Any|Optional|
-|Character Event Wish<br/>角色活动祈愿|Wish data with a `gacha_type` of `301\|400` |Wish Log Table|Optional, but expected for export|
-|Weapon Event Wish<br/>武器活动祈愿|Wish data with a `gacha_type` of `302`|Wish Log Table|Optional, but expected for export|
-|Permanent Wish<br/>常驻祈愿|Wish data with a `gacha_type` of `200`|Wish Log Table|Optional, but expected for export|
+|Character Event Wish<br/>角色活动祈愿|Wish data with a `gacha_type` of `301\|400` |Wish Log Table|Optional, butexpected for export|
+|Weapon Event Wish<br/>武器活动祈愿|Wish data with a `gacha_type` of `302`|Wish Log Table|Optional, butexpected for export|
+|Permanent Wish<br/>常驻祈愿|Wish data with a `gacha_type` of `200`|Wish Log Table|Optional, butexpected for export|
 |Beginner's Wish<br/>新手祈愿|Wish data with a `gacha_type` of `100`|Wish Log Table|Optional, but expected for export|
 |Raw Data<br/>原始数据|All the wish log data|Raw Data Table|**See the *Structure of Raw Data Table* section below for detail**|
 
@@ -133,3 +133,120 @@ This section is to standardize the compatibility with analytics Apps.
 > |-|-|-|-|-|-|
 > |2021-02-17 18:45:09|以理服人|武器|3|角色活动祈愿-2|...|
 > |...|...|...|...|...|...|
+
+### Structure of Raw Data Table
+
+When export,
+
+* The applications should ask users whether to include the Raw Data Table whenever possible.
+* A workbook file would be recognized as UIGF format once it contains a worksheet named `Raw Data` ( `原始数据` ).
+* The contents of the table should be filled in strictly as described in this format standard.
+* **The order of the headers should be strictly sorted as the sequence in the following table.**
+* The existing fields are sorted in **lexicographical ascending order**. The fields that added in the future would be sorted after in introduced time order.
+* For no special needs, we recommend to export all fields contained in the json data.
+* When importing, it is strongly recommended that you write the programs that do not depend on the order of the columns to achieve the maximum compatibility.
+* If you omit the values of some optional fields, leave the header present and the corresponding columns empty.
+
+|Header|Necessity|
+|-|-|
+|`count`|Optional, but recommend to retain. Not excluding the possibility of a `count` not in "1" value.|
+|`gacha_type`|Necessary|
+|`id`|Necessary. And most of the Apps sort the data by this field.|
+|`item_id`|Optional. This field has been officially deprecated.|
+|`item_type`|Necessary.|
+|`lang`|Optional, but recommended for internationalization.|
+|`name`|Necessary.|
+|`rank_type`|Optional, but recommended for analysis.|
+|`time`|Optional, but recommended for analysis.|
+|`uid`|Optional, but recommended to be decided by the users for analysis.|
+|`uigf_gacha_type`|Necessary.|
+
+#### Example
+
+|count|gacha_type|id|item_id|item_type|lang|name|rank_type|time|uid|uigf_gacha_type|
+|-|-|-|-|-|-|-|-|-|-|-|
+|1|301|1613556360008291100||Weapon|en-us|Debate Club|3|2021-02-17 18:45:09|123456789|301|
+|...|...|...|...|...|...|...|...|...|...|...|
+
+
+> (The Simplified Chinese Version)
+>
+> |count|gacha_type|id|item_id|item_type|lang|name|rank_type|time|uid|uigf_gacha_type|
+> |-|-|-|-|-|-|-|-|-|-|-|
+> |1|301|1613556360008291100||武器|zh-cn|以理服人|3|2021-02-17 18:45:09|123456789|301|
+> |...|...|...|...|...|...|...|...|...|...|...|
+
+## Json Format
+
+> Uniformed Interchangeable GachaLog Format standard of Json (UIGF.J)
+
+Since the Json format is consistent with the format of the data fetched from official API and is easier for the import and export of the Apps,
+
+here we make the specifications.
+
+This format is only used for the data exchange between apps.
+
+### The export format
+
+With the idea of extracting the same value field to the upper level, we have specified the following json format
+
+```json
+{
+    "info" : {
+        "uid" : "000000000",
+        "lang" : "zh-cn",
+        ...
+    },
+    "list" : [
+        {
+            "gacha_type": "000",
+            "item_id": "",
+            "count": "1",
+            "time": "yyyy-MM-dd HH:mm:ss",
+            "name": "以理服人",
+            "item_type": "武器",
+            "rank_type": "3",
+            "id": "1600099200004770203",
+            "uigf_gacha_type": "000",
+        },
+        ...
+    ]
+}
+```
+
+### `info`
+
+In addition to the `uid` and `lang` field extracted from `{gacha_item}`, it can also contain the following fields that we recognize.
+
+|Field Name|Value|Notes|
+|-|-|-|
+|`export_time`|The time of export: `yyyy-MM-dd HH:mm:ss`||
+|`export_timestamp`|The UNIX time stamp of export|v2.2+|
+|`export_app`|Name of the app that exported this log file. See the table below for detail.||
+|`export_app_version`|Version of the app that exported this log file.||
+|`uigf_version`|The `UIGF` version applied by this field. In case a breaking change of `UIGF` occurs, the app cannot handle it.||
+
+#### `uigf_version`
+
+Legal value
+
+|Value|Notes|Compatibility|
+|-|-|-|
+|`v2.0`|The first official version. |v2.0|
+|`v2.1`|Simplify some expressions. Exactly the same as v2.0 in data format.|v2.1 and lower|
+|`v2.2`|Add `info.export_timestamp` field filled by the UNIX timestamp. |v2.2 and lower|
+
+#### `export_app`
+
+Use `-` if have no export support.
+
+|Export App|Value of `export_app`|
+|-|-|
+| [biuuu/genshin wish export](https://github.com/biuuu/genshin-wish-export) | `genshin-wish-export` |
+| [DGP Studio/Snap.Genshin](https://github.com/DGP-Studio/Snap.Genshin) | `Snap Genshin` |
+| [MUK/应急食品](https://gtool.mukapp.top/)|`MUKGenshinTool`|
+| [Scighost/KeqingNiuza](https://github.com/Scighost/KeqingNiuza) | - |
+| [Scighost/Xunkong](https://github.com/Scighost/Xunkong) | `Xunkong.Desktop` |
+| [sunfkny/genshin gacha export](https://github.com/sunfkny/genshin-gacha-export) | `genshin-gacha-export` |
+| [TremblingMoeNew/DodocoTales](https://github.com/TremblingMoeNew/DodocoTales) | - |
+| [voderl/genshin gacha analyzer](https://github.com/voderl/genshin-gacha-analyzer) | - |

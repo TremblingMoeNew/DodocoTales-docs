@@ -23,6 +23,5 @@
 > - [beto-rodriguez/LiveCharts2](https://github.com/beto-rodriguez/LiveCharts2) 
 > - [CommunityToolkit/WindowsCommunityToolkit](https://github.com/CommunityToolkit/WindowsCommunityToolkit) 
 > - [justcoding121/titanium-web-proxy](https://github.com/justcoding121/Titanium-Web-Proxy) 
->
-> 
 
+?> 2022/09/28: 主分支切换完成，当前主分支为V1版本。
